@@ -1,0 +1,33 @@
+WHAT IS COMPONENTS?
+Components are the independent and reusable bits of code. They serve the same purpose as JS functions , but work in isolation and return HTML or JSX to be very precised
+
+it can be written as : -  every time we are working with component the only main thing which we have to keep in mind is to return an html comnponent 
+
+function App(){
+}
+    OR 
+const App = () =>{
+    return <div>Components</div>
+}
+
+
+=> WHAT IS JSX?  jsx=javascript xml
+JSX allows ys to write HTML in React
+JSX makes it easier to write and add HTML in React
+
+
+=>RULE
+1) anytime we are working with jsx then this is the first rule to keep in mind that from 1component we are only allowed to return 1 div 
+and inside that div you can add many divs or other tags
+2)in jsx we have to close every tags that we use
+3)anytime you are working with classes you are not allowded to provide a class with class keyword instead of that you have to write className
+4)anytime you are working with forms in such situations we have to provide 'htmlFor' instead of 'for' because 'for' keyword is preserved for javascript
+
+
+=>{Expressions in JSX}
+with JSX you can write Expressions inside curly braces. the Expressions can be a react variable, or property, or any other valid javascript Expression. Jsx will execute the expression and return the result.
+
+
+=> Lists
+In react, we will render listes with some type of loop. the javascript map() array method is generally the preferred method.
+ 
