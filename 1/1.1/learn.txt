@@ -31,3 +31,12 @@ with JSX you can write Expressions inside curly braces. the Expressions can be a
 => Lists
 In react, we will render listes with some type of loop. the javascript map() array method is generally the preferred method.
  
+
+ => Props 
+ Props/Properties are arguments passed into react Components
+ props allows us to pass data from parent component to a child component
+ props are passed to Components via HTML attribute   
+
+
+ =>CONDITIONAL RENDERING 
+Conditional rendering allows us to dynamically display different UI Components or content based on specific conditions. This enables us to create more interactice and responsive user exoeriences
