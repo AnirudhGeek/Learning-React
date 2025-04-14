@@ -1,0 +1,5 @@
+=> ICON
+to use icon first of all run npm install react-icons --save
+then search the icon and import it where you want to
+
+
