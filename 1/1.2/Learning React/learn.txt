@@ -3,3 +3,19 @@ to use icon first of all run npm install react-icons --save
 then search the icon and import it where you want to
 
 
+=>STATE
+State is a way to store and manage data that can change over time and affects how the component renders. We define state using the useState Hook, which allow you to set an initial value and provides a way to update that state 
+
+=>HOOKS 
+Hooks are a new addition in react16.8 . they let you use state and other react features without writing a class
+
+
+=>useState()
+useState Hook allows us to tract state om a functional component.state generally refers to date or properties that need to be tracking in an application
+
+const [data,changeDate] = useState( )
+        ^       ^                  ^
+        |       |                  |
+    initial    change            initial
+     value      value             value
+
