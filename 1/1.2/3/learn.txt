@@ -1,0 +1,7 @@
+=>PORTAL
+portal is a feature that allows you to render a child componennt into a DOM node that exists outside the hierarchy of the parent component. this can be useful for scenarios like modals,tooltips, or dropdown where you want to break out of the usual parent-child structure and render in a different part of the DOM.
+
+createPortal
+first we have have to introduce what we want to render
+Next we have to specify where we want to render them 
+eg. document.querySelector('#popup-content') 
