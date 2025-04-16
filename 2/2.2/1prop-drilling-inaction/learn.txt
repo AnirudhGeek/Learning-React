@@ -1,0 +1,4 @@
+=>CONTEXT API
+Context API is a feature that allows you to manage and share state across your component tree without having to pass props down manually at every level. It is useful for scenarios where you need to share data or functions across many components , especially when these components are deeply nested.
+
+but the drawback here is while we use Data.Consumer then we have to provide many callbacks inside callbacks which will become tough to manage
