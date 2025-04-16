@@ -1,0 +1,42 @@
+=>USEEFFECT()
+useEffect hook allows you to perform side effects in your components. Some examples of side effects are : fetching data, directly updating the DOM etc.
+
+useEffect()=>{
+    //do your magic here
+}
+
+things to keep in mind
+1.WITHOUT THE ARRAY 
+here you can se we are not providing any array that array is called the dependency array
+        so anytime we dont specify the dependency array so in that situation the call back function will call on every single render  
+
+2. useEffect with conditional
+-> you cannot prep your hook inside a conditional statement
+eg.❌❌❌
+ if(val>0){
+    useEffect(()=>{
+        clg("call useEffect)
+        document.title = 'Increment (${val})'
+    })
+ }
+
+-> if you want to use conditional statement you are going to have to use inside the useEffect hook 
+eg.✅✅✅
+useEffect(()=>{
+    if(val>0){
+        clg("call useEffect)
+        document.title = 'Increment (${val})'
+    }
+})
+
+
+
+3. Any time we specify empty dependency array forward useEffect ot will only fire that function which is available inside our useEffect hook on the initial render like when our component first renders it will call their functions not when our component changes
+eg.
+useEffect(()=>{
+    clg("call useEffect")
+    if(val>0){
+        document.title = "Increment(${val})'
+    }
+},[])
+but if we create some sort of a state and we provide the value of that state so anytime that state changes that component will re render and that callback function will fire 
