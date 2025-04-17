@@ -1,0 +1,19 @@
+=>CUSTOM HOOKS
+Custom hooks are javascript functions that start with the prefix use (eg useFetch,useForm) and can call other hooks within them. They allow you to extract and reuse logic that involves state or side effects, making your components more readable and maintainable
+
+eg. 
+import{useState,useEffect} from "react";
+
+const useFetch = (url) =>{
+    const [data,setData] = useState(null);
+
+    useEffect(()=>{
+        fetch(url)
+            .then((res)=>res.json())
+            .then((data)=>setData(data))
+    },[url]);
+
+    return [data];
+}
+
+export default useFetch;
